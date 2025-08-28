@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/login.html">Login</a>
+        <a href="/signup.html">Signup</a>
+        <a href="/cart.html">My Cart</a>
+      </div>
+    </nav>
+    <div class="login-container profile">
+      <h3 class="heading2">My Profile</h3>
+      <input type="text" id="fname" placeholder="First Name" />
+      <!-- <br /> -->
+      <input type="text" id="lname" placeholder="Last Name" />
+      <!-- <br /> -->
+      <button class="btn active" id="saveInfoBtn">Save Info</button>
+      <p id="error"></p>
+      <p id="success"></p>
 
+      <h3 class="heading2">Edit Password</h3>
+      <input type="password" id="oldPassword" placeholder="Old Password" />
+      <!-- <br /> -->
+      <input type="password" id="newPassword" placeholder="New Password" />
+      <!-- <br /> -->
+      <input
+        type="password"
+        id="cnfNewPassword"
+        placeholder="Confirm New Password"
+      />
+      <!-- <br /> -->
+      <p id="passError" class="error"></p>
+      <p id="passSuccess" class="success"></p>
+
+      <button class="btn active" id="changePass">Change Password</button>
+      <button class="btn active" id="logout">Logout</button>
+    </div>
+
+    <script src="./script.js" async defer></script>
+  </body>
+</html>
